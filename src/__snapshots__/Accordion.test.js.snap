@@ -35,6 +35,41 @@ exports[`<Accordion />  opens a clicked section 1`] = `
 </ul>
 `;
 
+exports[`<Accordion /> only opens the last section when multiple sections have been clicked. 1`] = `
+<ul>
+  <li
+    key="0"
+  >
+    <button
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+  </li>
+  <li
+    key="1"
+  >
+    <button
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+  </li>
+  <li
+    key="2"
+  >
+    <button
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+    <p>
+      Animi amet cumque sint cupiditate officia ab voluptatibus libero optio et?
+    </p>
+  </li>
+</ul>
+`;
+
 exports[`<Accordion /> renders an empty li when the sections prop is not supplied 1`] = `
 <ul>
   <li />

@@ -47,5 +47,11 @@ describe('<Accordion />', () => {
       expect(toJson(wrapper)).toMatchSnapshot()
     })
 
-    it('only opens the last section when multiple sections have been clicked.')
+    it('only opens the last section when multiple sections have been clicked.', () => {
+      const wrapper = shallow(<Accordion sections={sections} />)
+      wrapper.find('button').at(0).simulate('click')
+      wrapper.find('button').at(1).simulate('click')
+      wrapper.find('button').at(2).simulate('click')
+      expect(toJson(wrapper)).toMatchSnapshot()
+  })
 });
